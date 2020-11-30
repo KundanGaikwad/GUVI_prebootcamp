@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>Pan Card Update Form</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <table style="width:100%">
+        <tbody>      
+        <tr>
+            <th>
+                Request For new Pan Card/ Change in PAN Data<br>
+                Fields marked with * (asterisk) are mandatory. . To avoid mistake(s), please refer guidelines and instructions .
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <span>Whether citizen of India</span>
+                <label for="Yes">Yes</label>
+                <input type="radio" id="Yes" value="Yes" name="citizen">
+                <label for="No">No</label>
+                <input type="radio" id="No" value="No" name="citizen"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Permanent Account Number (PAN)</span>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>1. Name</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Title</span>
+                <label for="Mr">Shri/Mr</label>
+                <input type="radio" id="Mr" value="Mr" name="title">
+                <label for="Mrs">Smt/Mrs</label>
+                <input type="radio" id="Mrs" value="Mrs" name="title">
+                <label for="Ms">Kumari/Ms</label>
+                <input type="radio" id="Ms" value="Ms" name="title">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <span>Last Name/Surname</span>
+                        </td>
+                        <td>
+                            <span>First Name</span>
+                        </td>
+                        <td>
+                            <span>Middle Name</span>
+                        </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </td>     
+        </tr>
+        <tr>
+            <td>
+                <span>Name as you would like to printed on the card</span><br>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <span>Details of Parents.</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</span>
+                <label for="mYes">Yes</label>
+                <input type="radio" id="mYes" value="Yes" name="mother is single">
+                <label for="mNo">No</label>
+                <input type="radio" id="mNo" value="No" name="mother is single">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                *Father's Name
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <span>Last Name/Surname</span>
+                        </td>
+                        <td>
+                            <span>First Name</span>
+                        </td>
+                        <td>
+                            <span>Middle Name</span>
+                        </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </td>     
+        </tr>
+        <tr>
+            <td>
+                *Mother's Name
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <span>Last Name/Surname</span>
+                        </td>
+                        <td>
+                            <span>First Name</span>
+                        </td>
+                        <td>
+                            <span>Middle Name</span>
+                        </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </td>     
+        </tr>
+        <tr>
+            <td>
+                *4. Select Parent name which is to be printed on the card
+                <label for="fatherName">Father Name</label>
+                <input type="radio" id="fatherName" value="Yes" name="parentName">
+                <label for="motherName">Mother Name</label>
+                <input type="radio" id="motherName" value="No" name="parentName">
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+
+</html>
