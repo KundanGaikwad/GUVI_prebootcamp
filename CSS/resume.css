@@ -1,0 +1,95 @@
+#header {
+    background-color: #565656;
+    height: 250;
+    width: 100%;
+    position: relative;
+}
+
+#headerName {
+    background-color: #fcbd2b;
+    padding:  15px 0;
+    margin: auto;
+    width: 424px;
+    bottom: -25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #252725;
+    font-size: 40px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    z-index: 2;
+}
+
+.section {
+    width: 43%;
+    float: left;
+    padding: 2.5%;
+}
+
+#vl {
+    border-left: 3px solid #eaeaea;
+    height: 645px;
+    float: left;
+    /* width: 2%; */
+  }
+
+h5{
+    text-align: center;
+    color: #858585;
+    font-family: -webkit-pictograph;
+}
+
+span.title {
+    font-size: 35px;
+    font-family: -webkit-pictograph;
+    color: #858585;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+div.title {
+    position: relative;
+    height: 50px;
+}
+
+.png {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 5px;
+}
+
+#whiteLine {
+    background-color: #eeeeee;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 35px;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: -webkit-pictograph;
+    padding-left: 20px;
+}
+
+#profile_pic{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 42%;
+    z-index: 1;
+}
