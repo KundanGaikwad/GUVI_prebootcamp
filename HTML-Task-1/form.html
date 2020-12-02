@@ -1,184 +1,333 @@
 <html>
+
 <head>
     <title>Pan Card Update Form</title>
+    <link rel="stylesheet" href="./form.css">
 </head>
-<style>
-    table,
-    th,
-    td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-</style>
 
 <body>
     <table style="width:100%">
-        <tbody>      
-        <tr>
-            <th>
-                Request For new Pan Card/ Change in PAN Data<br>
-                Fields marked with * (asterisk) are mandatory. . To avoid mistake(s), please refer guidelines and instructions .
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <span>Whether citizen of India</span>
-                <label for="Yes">Yes</label>
-                <input type="radio" id="Yes" value="Yes" name="citizen">
-                <label for="No">No</label>
-                <input type="radio" id="No" value="No" name="citizen"><br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span>Permanent Account Number (PAN)</span>
-                <input type="text">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span>1. Name</span>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span>Title</span>
-                <label for="Mr">Shri/Mr</label>
-                <input type="radio" id="Mr" value="Mr" name="title">
-                <label for="Mrs">Smt/Mrs</label>
-                <input type="radio" id="Mrs" value="Mrs" name="title">
-                <label for="Ms">Kumari/Ms</label>
-                <input type="radio" id="Ms" value="Ms" name="title">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <table style="width: 100%">
-                    <tr>
-                        <td>
-                            <span>Last Name/Surname</span>
-                        </td>
-                        <td>
-                            <span>First Name</span>
-                        </td>
-                        <td>
-                            <span>Middle Name</span>
-                        </td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                </table>
-            </td>     
-        </tr>
-        <tr>
-            <td>
-                <span>Name as you would like to printed on the card</span><br>
-            </td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td>
-                <span>Details of Parents.</span>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</span>
-                <label for="mYes">Yes</label>
-                <input type="radio" id="mYes" value="Yes" name="mother is single">
-                <label for="mNo">No</label>
-                <input type="radio" id="mNo" value="No" name="mother is single">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                *Father's Name
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <table style="width: 100%">
-                    <tr>
-                        <td>
-                            <span>Last Name/Surname</span>
-                        </td>
-                        <td>
-                            <span>First Name</span>
-                        </td>
-                        <td>
-                            <span>Middle Name</span>
-                        </td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                </table>
-            </td>     
-        </tr>
-        <tr>
-            <td>
-                *Mother's Name
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <table style="width: 100%">
-                    <tr>
-                        <td>
-                            <span>Last Name/Surname</span>
-                        </td>
-                        <td>
-                            <span>First Name</span>
-                        </td>
-                        <td>
-                            <span>Middle Name</span>
-                        </td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td>
-                            <input type="text">
-                        </td>
-                    </tr>
-                </table>
-            </td>     
-        </tr>
-        <tr>
-            <td>
-                *4. Select Parent name which is to be printed on the card
-                <label for="fatherName">Father Name</label>
-                <input type="radio" id="fatherName" value="Yes" name="parentName">
-                <label for="motherName">Mother Name</label>
-                <input type="radio" id="motherName" value="No" name="parentName">
-            </td>
-        </tr>
+        <tbody>
+            <tr>
+                <th colspan="3">
+                    Request For new Pan Card/ Change in PAN Data<br>
+                    Fields marked with * (asterisk) are mandatory. . To avoid mistake(s), please refer guidelines and
+                    instructions .
+                </th>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td colspan="2">
+                    <span>*. Whether citizen of India</span>
+                    <label for="Yes">Yes</label>
+                    <input type="radio" id="Yes" value="Yes" name="citizen">
+                    <label for="No">No</label>
+                    <input type="radio" id="No" value="No" name="citizen"><br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <span>* Permanent Account Number (PAN)</span>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td colspan="2">
+                    <span>* 1. Name</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <span>Title</span>
+                    <label for="Mr">Shri/Mr</label>
+                    <input type="radio" id="Mr" value="Mr" name="title">
+                    <label for="Mrs">Smt/Mrs</label>
+                    <input type="radio" id="Mrs" value="Mrs" name="title">
+                    <label for="Ms">Kumari/Ms</label>
+                    <input type="radio" id="Ms" value="Ms" name="title">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <table style="width: 100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span>Last Name/Surname</span>
+                                </td>
+                                <td>
+                                    <span>First Name</span>
+                                </td>
+                                <td>
+                                    <span>Middle Name</span>
+                                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2">
+            <span>* Name as you would like to printed on the card</span><br>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2">
+            <span>Details of Parents.</span>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2">
+            <span>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother
+                only</span>
+            <label for="mYes">Yes</label>
+            <input type="radio" id="mYes" value="Yes" name="mother is single">
+            <label for="mNo">No</label>
+            <input type="radio" id="mNo" value="No" name="mother is single">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td colspan="2">
+            *Father's Name
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2">
+            <table style="width: 100%">
+                <tr>
+                    <td>
+                        <span>Last Name/Surname</span>
+                    </td>
+                    <td>
+                        <span>First Name</span>
+                    </td>
+                    <td>
+                        <span>Middle Name</span>
+                    </td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text">
+        </td>
+        <td>
+            <input type="text">
+        </td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td colspan="2">
+            *Mother's Name
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2">
+            <table style="width: 100%">
+                <tr>
+                    <td>
+                        <span>Last Name/Surname</span>
+                    </td>
+                    <td>
+                        <span>First Name</span>
+                    </td>
+                    <td>
+                        <span>Middle Name</span>
+                    </td>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text">
+        </td>
+        <td>
+            <input type="text">
+        </td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            *4. Select Parent name which is to be printed on the card
+
+        </td>
+        <td>
+            <label for="fatherName">Father Name</label>
+            <input type="radio" id="fatherName" value="Yes" name="parentName">
+            <label for="motherName">Mother Name</label>
+            <input type="radio" id="motherName" value="No" name="parentName">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td><span> 5. Date of Birth/Incorporation/Agreement/Partnership</span><br>
+            <span>or trust Deed/Formation of Body of Individuals/</span><br>
+            <span>Association of Persons</span>
+        </td>
+        <td>
+            DD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YYYY
+            <br>
+            <select>
+                <option value=""> DD</option>
+                <option value="01"> 1</option>
+                <option value="02"> 2</option>
+                <option value="03"> 3</option>
+                <option value="04"> 4</option>
+                <option value="05"> 5</option>
+                <option value="06"> 6</option>
+                <option value="07"> 7</option>
+                <option value="08"> 8</option>
+                <option value="09"> 9</option>
+                <option value="10"> 10</option>
+                <option value="11"> 11</option>
+                <option value="12"> 12</option>
+                <option value="13"> 13</option>
+                <option value="14"> 14</option>
+                <option value="15"> 15</option>
+                <option value="16"> 16</option>
+                <option value="17"> 17</option>
+                <option value="18"> 18</option>
+                <option value="19"> 19</option>
+                <option value="20"> 20</option>
+                <option value="21"> 21</option>
+                <option value="22"> 22</option>
+                <option value="23"> 23</option>
+                <option value="24"> 24</option>
+                <option value="25"> 25</option>
+                <option value="26"> 26</option>
+                <option value="27"> 27</option>
+                <option value="28"> 28</option>
+                <option value="29"> 29</option>
+                <option value="30"> 30</option>
+                <option value="31"> 31</option>
+            </select>&nbsp;&nbsp;
+            <select>
+                <option value=""> MM</option>
+                <option value="01"> JAN</option>
+                <option value="02"> FEB</option>
+                <option value="03"> MAR</option>
+                <option value="04"> APR</option>
+                <option value="05"> MAY</option>
+                <option value="06"> JUN</option>
+                <option value="07"> JUL</option>
+                <option value="08"> AUG</option>
+                <option value="09"> SEP</option>
+                <option value="10"> OCT</option>
+                <option value="11"> NOV</option>
+                <option value="12"> DEC</option>
+            </select>&nbsp;&nbsp;
+            <input type="text" size="4">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td><span>* 6. Gender</span></td>
+        <td>
+            <label for="M">Male</label>
+            <input type="radio" id="M" name="PAN_SEX" value="M">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="F">Female</label>
+            <input type="radio" id="F" name="PAN_SEX" value="F">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="T">transGender</label>
+            <input type="radio" id="T" name="PAN_SEX" value="T">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td colspan="2">
+            &nbsp;&nbsp; 7. Photo Mismatch
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td colspan="2">
+            &nbsp;&nbsp; 8. Signature Mismatch
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <input type="checkbox" name="PAN_CMNC_ADDR_CHK" value="Y" checked="" onclick="return false;">
+        </td>
+        <td>
+            9. Address for Communication
+        </td>
+        <td>
+          Residential
+          <input type="radio" name="PAN_CMNC_ADDR_FLG">
+     
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          Office
+         <input type="radio" name="PAN_CMNC_ADDR_FLG"> 
+     
+        </td>
+     </tr>
+     <tr>
+        <td>&nbsp;</td>
+        <td><span>Office Name<I> (to be filled only in case of office address)</I></span></td>
+        <td><input type=text size=30></td>
+     </tr>
+     <tr>
+        <td>&nbsp;</td>
+        <td>Flat/Door/Block No.</td>
+        <td><input type=text size=25 maxlength=25></td>
+     </tr>
+     
+     <tr>
+        <td>&nbsp;</td>
+        <td>Name of Premises/Building/Village</td>
+        <td><input type=text size=25 maxlength=25></td>
+     </tr>
+     
+     <tr>
+        <td>&nbsp;</td>
+        <td>Road/Street/Lane/Post Office</td>
+        <td><input type=text size=25 maxlength=25></td>
+     </tr>
+     
+     <tr>
+        <td>&nbsp;</td>
+        <td>Area/Locality/Taluka/Sub-Division</td>
+        <td><input type=text size=25 maxlength=25></td>
+     </tr>
     </tbody>
     </table>
 </body>
