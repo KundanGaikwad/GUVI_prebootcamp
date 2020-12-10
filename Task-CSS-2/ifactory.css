@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+    font-family: 'Crimson Pro', serif;
+}
+
+#header {
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    background-color: #1f1527;
+    text-align: center;
+    letter-spacing: 0.5em;
+    color: #f0e6e3;
+    padding: 17.5vh 0;
+    font-size: 3vw;
+    transform: skewY(-5deg);
+}
+
+p#mainline::first-letter{
+    font-family: Sail;
+    font-size: 12vw;
+    transform: skewY(5deg);
+}
+
+.right {
+    background-color: #f1e7de;
+    padding: 17.5vh 30vw 17.5vh 20vw;
+    FONT-VARIANT: JIS04;
+    font-size: 1.5vm;
+}
+
+.left {
+    background-color: #1f1527;
+    padding: 17.5vh 20vw 17.5vh 30vw;
+    FONT-VARIANT: JIS04;
+    font-size: 1.5vm;
+    color: #f0e6e3;
+}
+
+.outer{
+    transform: skewY(-5deg);
+}
+
+p, span {
+    transform: skewY(5deg);
+}
