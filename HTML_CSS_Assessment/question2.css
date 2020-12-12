@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    background-color: rgb(231 231 231);
+}
+
+#Buttons {
+    float: right;
+}
+
+#container {
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#homeBtn {
+    background-color: rgb(38, 145, 233);
+    color: white;
+    height: 4.25vmin;
+    width: 8vmin;
+    border: none;
+    border-radius: 0.5vmin;
+}
+
+.otherBtn {
+    border: none;
+    color: rgb(38, 145, 233);
+    background-color: rgb(231 231 231);
+}
+
+#topMenu {
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    font-size: 3vmin;
+    color: grey;
+}
+
+#launchBtn {
+    background-color: rgb(38, 145, 233);
+    border: none;
+    border-radius: 0.5vmin;
+    color: white;
+    width: 19vmin;
+    height: 5vmin;
+    margin-top: 1vh;
+    text-align: center;
+    margin-bottom: 1vh;
+    display: block;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
+}
+
+#middleContainer {
+    background-color: #dbe6ec;
+    height: 45vmin;
+}
+
+#middleContainer p {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+}
+
+#mainHeading {
+    margin: 0;
+    padding-top: 8vmin;
+    padding-bottom: 3vmin;
+    text-align: center;
+}
+
+#signUpBtn {
+    width: 14vmin;
+    height: 5vmin;
+    margin-top: 1vh;
+    text-align: center;
+    margin-bottom: 1vh;
+    display: block;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
+    border: none;
+    border-radius: 0.5vmin;
+    color: white;
+    background-color: #38c138;
+}
+
+section > div {
+    width: 46%;
+    padding-right: 2%;
+    float: left;
+}
